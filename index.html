@@ -1,122 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Neighbridge</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misaki English オンライン英会話</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar {
+      background-color: #ff6600;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1920x1080') center center / cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.5em;
+    }
+    .btn-primary {
+      background-color: #ff6600;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #e55b00;
+    }
+    .section-title {
+      margin: 40px 0 20px;
+      font-weight: bold;
+      color: #ff6600;
+    }
+    .card {
+      border: none;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #999;
+    }
+    footer a:hover {
+      color: white;
+    }
+    .feature-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #ff6600;
+    }
+  </style>
+</head>
+<body>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Misaki English オンライン英会話</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">サービス紹介</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">特徴</a></li>
+        <li class="nav-item"><a class="nav-link" href="#plans">プランと料金</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">お客様の声</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- meta tags for SEO -->
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="Neighbridge, International, Community, Nagoya"
-    />
-    <meta
-      name="description"
-      content="NeighBridge is an international community in Nagoya excited to welcome
-      you home!"
-    />
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>三ヶ月でワーキングホリデーに行ける英語力を身につけよう！</h1>
+      <p>目標管理シートと毎日のおしゃべり日記で効率的に学習</p>
+      <a href="#plans" class="btn btn-primary btn-lg">無料体験レッスンを申し込む</a>
+    </div>
+  </section>
 
-    <!-- OpenGraph (Facebook) -->
-    <meta property="og:title" content="neighbridge" />
-    <meta
-      property="og:description"
-      content="NeighBridge is an international community in Nagoya excited to welcome
-          you home!"
-    />
-    <meta property="og:url" content="https://neighbridge.com" />
-    <meta
-      property="og:image"
-      content="https://neighbridge.com/img/neighbridge.svg"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ja_JP" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Neighbridge" />
-    <meta
-      property="twitter:description"
-      content="NeighBridge is an international community in Nagoya excited to welcome
-          you home!"
-    />
-    <meta
-      property="twitter:image"
-      content="https://neighbridge.com/img/neighbridge.svg"
-    />
-    <meta property="twitter:image:alt" content="Neighbridge logo" />
-
-    <!-- Assets -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="canonical" href="https://neighbridge.com" />
-  </head>
-  <body>
-    <main>
-      <img src="img/neighbridge_logo.png" alt="Neighbridge" class="logo" />
-
-      <div class="description">
-        <p>
-          NeighBridge is an international community in Nagoya excited to welcome
-          you home!
-        </p>
-        <p>
-          ネイブリッジは、「おかえり」があふれる名古屋のインターナショナルコミュニティです！
-        </p>
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">私たちのサービス</h2>
+      <p class="text-center">英会話レッスンの概要と魅力。ダミー文章。英会話レッスンの概要と魅力。ダミー文章。</p>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <i class="feature-icon fas fa-graduation-cap"></i>
+          <h4>初心者向けコース</h4>
+          <p>ダミー文章。初心者向けのコースです。</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="feature-icon fas fa-briefcase"></i>
+          <h4>ビジネス英語コース</h4>
+          <p>ダミー文章。ビジネスシーンで役立つ英語を学びます。</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="feature-icon fas fa-comments"></i>
+          <h4>日常会話コース</h4>
+          <p>ダミー文章。日常生活で使える英語を学びます。</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="social_wrapper">
-        <a class="signuphere" href="https://linktr.ee/NeighBridge">
-          <img src="img/signup.png"/>
-        </a>
+  <!-- Features Section -->
+  <section id="features" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center section-title">私たちの特徴</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <i class="feature-icon fas fa-rocket"></i>
+          <h4>短期間で成果</h4>
+          <p>ダミー文章。三ヶ月でワーキングホリデーに行ける英語力がつく。</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="feature-icon fas fa-calendar-alt"></i>
+          <h4>学習管理</h4>
+          <p>ダミー文章。目標管理シートで毎日の学習時間を管理。</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="feature-icon fas fa-video"></i>
+          <h4>実践的な学習</h4>
+          <p>ダミー文章。毎日の動画でおしゃべり日記を提出すると添削。</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="description1">
-        <p>
-          Mission
-        </p>
-      <div class="description">
-        <p>
-          Our aim for this community is building bridges to become neighbors crossing over any walls such as gender, nationalities, and ages.
-         </p>
-        <p>
-          私たちのコミュニティの目的は、性別、国籍、年齢などの壁を超えて橋を渡し、隣人となること。
-        </p>
-        <br>
+  <!-- Plans and Pricing Section -->
+  <section id="plans" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">プランと料金</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="プラン画像">
+            <div class="card-body text-center">
+              <h4 class="card-title">初心者プラン</h4>
+              <p class="card-text">ダミー文章。初心者向けのプランです。</p>
+              <p class="card-text">月額 ¥3,000</p>
+              <a href="#" class="btn btn-primary">プランを選ぶ</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="プラン画像">
+            <div class="card-body text-center">
+              <h4 class="card-title">集中プラン</h4>
+              <p class="card-text">ダミー文章。集中的に学びたい方向け。</p>
+              <p class="card-text">月額 ¥5,000</p>
+              <a href="#" class="btn btn-primary">プランを選ぶ</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="プラン画像">
+            <div class="card-body text-center">
+              <h4 class="card-title">ビジネスプラン</h4>
+              <p class="card-text">ダミー文章。ビジネス英語を学びたい方向け。</p>
+              <p class="card-text">月額 ¥7,000</p>
+              <a href="#" class="btn btn-primary">プランを選ぶ</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="social_wrapper">
-        <a class="social meetup" href="https://www.meetup.com/neighbridge/">
-          <img src="img/meetup.svg" alt="Meetup" />
-          <span>Meetup</span>
-        </a>
-        <a
-          class="social instagram"
-          href="https://www.instagram.com/itsneighbridge"
-        >
-          <img src="img/instagram.svg" alt="Instagram" />
-          <span>Instagram</span>
-        </a>
-        <a
-          class="social facebook"
-          href="https://www.facebook.com/profile.php?id=100088403629487"
-        >
-          <img src="img/facebook.svg" alt="Facebook" />
-          <span>Facebook</span>
-        </a>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center section-title">お客様の声</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">"ダミー文章。とても役に立つレッスンでした。先生方も親切で、英語力が確実に向上しました。"</p>
+              <h5 class="card-title">山田 太郎</h5>
+              <p class="card-subtitle text-muted">初心者プラン受講</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">"ダミー文章。ビジネス英語のスキルが大幅に向上し、仕事でも自信を持って英語が使えるようになりました。"</p>
+              <h5 class="card-title">鈴木 花子</h5>
+              <p class="card-subtitle text-muted">ビジネスプラン受講</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">"ダミー文章。集中プランで短期間で英語力を伸ばすことができました。毎日の学習管理が役立ちました。"</p>
+              <h5 class="card-title">佐藤 次郎</h5>
+              <p class="card-subtitle text-muted">集中プラン受講</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="description">
-        <br>
-        <p>
-          Looking forward to becoming your neighbor there!
-         </p>
-        <p>
-          あなたの隣人となることを楽しみにしています！
-        </p>
-        <br>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">お問い合わせ</h2>
+      <p class="text-center">ダミー文章。ご質問やお問い合わせはこちらからお願いします。</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="form-group">
+              <label for="name">お名前</label>
+              <input type="text" class="form-control" id="name" placeholder="お名前を入力してください">
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input type="email" class="form-control" id="email" placeholder="メールアドレスを入力してください">
+            </div>
+            <div class="form-group">
+              <label for="message">メッセージ</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="メッセージを入力してください"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">送信する</button>
+          </form>
+        </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>© Misaki English オンライン英会話</p>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
 </html>

@@ -6,66 +6,144 @@
   <title>Misaki's English オンライン英会話</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-    .navbar {
-      background-color: #ff4500;
-    }
-    .navbar-brand, .nav-link {
-      color: #fff !important;
-    }
+  <style>body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #ff4500;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+  
+  .hero {
+    background: url("img/main.png") center center / cover no-repeat;
+    color: white;
+    text-shadow: 1px 2px 3px #808080;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 2.0em;
+  }
+  
+  .btn-primary {
+    background-color: #ff4500;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e55b00;
+  }
+  
+  .section-title {
+    margin: 40px 0 20px;
+    font-weight: bold;
+    color: #ff6600;
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: #999;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  .feature-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff4500;
+  }
+  
+  .line-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 600px;
+  }
+
+  .box2 {
+    padding: 0.5em 1em;
+    margin: 40px 0 20px;
+    font-weight: bold;
+    color: #fff;/*文字色*/
+    background: #ff6600;
+    border: solid 3px #ff6600;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
+  
+  /* メディアクエリ */
+  @media (max-width: 768px) {
     .hero {
-      background: url("img/main.png") center center / cover no-repeat;
-      color: white;
-      text-shadow: 1px 2px 3px #808080;
-      text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
     }
+  
     .hero h1 {
-      font-size: 3.5em;
-      font-weight: bold;
+      font-size: 2.5em;
     }
+  
     .hero p {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
-    .btn-primary {
-      background-color: #ff4500;
-      border: none;
-    }
-    .btn-primary:hover {
-      background-color: #e55b00;
-    }
-    .section-title {
-      margin: 40px 0 20px;
-      font-weight: bold;
-      color: #ff6600;
-    }
-    .card {
-      border: none;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 20px 0;
-    }
-    footer a {
-      color: #999;
-    }
-    footer a:hover {
-      color: white;
-    }
+  
     .feature-icon {
-      font-size: 3em;
-      margin-bottom: 20px;
-      color: #ff4500;
+      font-size: 2.5em;
     }
-  </style>
+    
+    .line-icon {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  
+    .feature-icon {
+      font-size: 2em;
+    }
+  
+    .line-icon {
+      width: 300px;
+    }
+  }
+</style>  
 </head>
 <body>
 
@@ -77,11 +155,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#services">サービス紹介</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">特徴</a></li>
-        <li class="nav-item"><a class="nav-link" href="#plans">プランと料金</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonials">お客様の声</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">お問い合わせ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apply">ご入会の流れ</a></li>
       </ul>
     </div>
   </header>
@@ -89,10 +163,13 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h1>Unlock your world with English</h1>
-      <h1> in the shortest path</h1>
-      <h1>『最短距離で、世界への扉を開こう』</h1>
-      <a href="#Contact" class="btn btn-primary btn-lg">英語学習の無料カウンセリングを申し込む</a>
+      <h1>Unlock your world</h1>
+      <h1>with English</h1>
+      <h1>in the shortest path</h1>
+      <p>『最短距離で、世界への扉を開こう』</p>
+      <!--
+              <a href="#aplly" class="btn btn-primary btn-lg">無料の英語学習カウンセリングを申し込む</a>
+      -->
     </div>
   </section>
 
@@ -128,7 +205,9 @@
       <div class="row">
         <div class="col-md-4 text-center">
           <i class="feature-icon fas fa-rocket"></i>
-          <h4>充実の「毎日アウトプット」</h4>
+          <div class="box2">
+            <p>充実の「毎日アウトプット」</p>
+        </div>
           <p>英語を話すことに苦手意識があるあなた。文法書とにらめっこしていませんか。英語習得で最も大切なのは、圧倒的な「アウトプットの量」
             
             そしてそれと同時に大切なのは、その「アウトプットの質」を高めることです。
@@ -144,7 +223,9 @@
         </div>
         <div class="col-md-4 text-center">
           <i class="feature-icon fas fa-calendar-alt"></i>
-          <h4>あなただけのオーダーメイドプラン</h4>
+          <div class="box2">
+            <p>あなただけのオーダーメイドプラン</p>
+        </div>
           <p>YouTubeやインスタグラムで、英語勉強法の情報が溢れています。
             多くの方が英語学習で陥るのは、「結局どうやって勉強したらいいの！？」
             
@@ -162,7 +243,10 @@
         </div>
         <div class="col-md-4 text-center">
           <i class="feature-icon fas fa-video"></i>
-          <h4>終わりのある英会話</h4>
+
+          <div class="box2">
+            <p>終わりのある英会話</p>
+        </div>
           <p>Misaki’s Englishの基礎は「受講者様の自学自習」
             このコミットメントにに適切なサポートが加わり、効果的な学習を実現。
             
@@ -174,19 +258,45 @@
   </section>
 
     <!-- apply Section -->
-    <section id="services" class="py-5">
+    <section id="apply" class="py-5">
       <div class="container">
         <h2 class="text-center section-title">◉ご入会の流れ</h2>
-        <p class="text-center">Step 1　お問い合わせ
-          まずは公式LINE、もしくはInstagramのDMからお問い合わせください。
-          公式LINEは下の緑のボタンから追加いただけます。
-          お問い合わせいただけましたら、日程調整させていただきます。</p>
-        <p class="text-center">Step 2　英語学習の無料カウンセリング
-          現在の英語学習状況と目標について無料でカウンセリングをさせていただき、
-          最適な英語学習法を提案いたします。</p>
-        <p class="text-center">Step 3　ご入会
-          カウンセリング、体験授業をお受けいただき納得していただけた場合は、
-          ご入会いただきレッスンスタートとなります。</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+              <h4 class="text-center section-title">Step1</h4>
+                <h4 class="card-title">お問い合わせ</h4>
+                <p class="card-text">まずは公式LINE、もしくはInstagramのDMからお問い合わせください。
+                  公式LINEは下の緑のボタンから追加いただけます。
+                  お問い合わせいただけましたら、日程調整させていただきます。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <h4 class="text-center section-title">Step2</h4>
+                  <h4 class="card-title">英語学習の無料カウンセリング</h4>
+                  <p class="card-text">現在の英語学習状況と目標について無料でカウンセリングをさせていただき、
+                    最適な英語学習法を提案いたします。</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <h4 class="text-center section-title">Step3</h4>
+                  <h4 class="card-title">ご入会</h4>
+                  <p class="card-text">カウンセリング、体験授業をお受けいただき納得していただけた場合は、
+                    ご入会いただきレッスンスタートとなります。</p>
+                </div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+        <a href="https://lin.ee/IHyiNIl" class="btn-line-add">
+          <img src="img/line-icon.png" alt="LINEアイコン" class="line-icon">
+      </a>
       </div>
     </section>
 
